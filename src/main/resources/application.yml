@@ -6,7 +6,7 @@ amqphub:
     username: [USERNAME]
     password: [PASSWORD]
     remote-url: amqps://[ENDPOINT]
-    #remote-url: amqpwss://[ENDPOINT]
+    #remote-url: amqpwss://[ENDPOINT]:443 # I want to do this
 
 logging:
   level:
