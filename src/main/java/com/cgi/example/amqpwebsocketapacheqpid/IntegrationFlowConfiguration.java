@@ -17,15 +17,15 @@ public class IntegrationFlowConfiguration {
     /**
      * Creates the send flow to Azure
      *
-     * @param inboundAdapter Listens to the request queue
+     * @param outboundAdapter Sends data to the queue
      * @return Impedance trace flow
      */
     @Bean
-    public IntegrationFlow sendFlow(final JmsSendingMessageHandler inboundAdapter) {
+    public IntegrationFlow sendFlow(final JmsSendingMessageHandler outboundAdapter) {
 
         return IntegrationFlows.from(MessageChannels.direct("inputChannel"))
                 .log("START - Sent message")
-                .handle(inboundAdapter) //Send to azure
+                .handle(outboundAdapter) //Send to azure
                 .get();
     }
 
