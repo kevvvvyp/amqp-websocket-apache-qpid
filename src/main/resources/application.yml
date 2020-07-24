@@ -1,0 +1,15 @@
+application:
+  queueName: [QUEUE]
+
+amqphub:
+  amqp10jms:
+    username: [USERNAME]
+    password: [PASSWORD]
+    remote-url: amqps://[ENDPOINT]
+    #remote-url: amqpwss://[ENDPOINT]
+
+logging:
+  level:
+    org.apache.qpid.jms: info
+    org.springframework.jms: info
+    org.amqphub.spring: info
