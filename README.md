@@ -1,2 +1,2 @@
 # amqp-websocket-apache-qpid
-Example using qpid (within amqphub) to communciate over amqpwss to Azure
+Spring Boot example using qpid (within amqphub) to communciate over amqpwss to Azure. Uses Spring integration JMS.
